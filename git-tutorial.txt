@@ -56,6 +56,6 @@ Confirm the checkout, this will reset the Master to where the checkout HEAD is p
 8. Congratulations, your local code has now been "pushed" to your GitHub repo.
 
 ##Vocabulary##
-Both will "copy" the repo but they are not the same:
-clone: making a copy of the repo locally
+Both will "copy" the repo but they are not the same. clone is an actual git command, fork isn't:
+clone: used to target an existing repository and create a clone, or copy of the target repository.
 fork: copying the repo as your own repo to your GitHub account (future merges may occur, a "pull" is possible.)
