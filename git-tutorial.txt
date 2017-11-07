@@ -1,0 +1,61 @@
+Git Tutorial
+
+******Introduction******
+* What is Git?
+Git is an open-source technology used for version control. 
+
+* What is Github?
+Web-based Git version control repository hoisting service.
+
+Note: Git and GitHub are not the same. Git is the technology and GitHub makes use of it. 
+      If you only want to keep track of your code locally, you don't need to use GitHub. 
+      But if you want to work with a team, you can use GitHub to collaboratively modify the project's code.
+
+
+******Using Git******
+##Git Basic Commands##
+* Git init
+Once per project folder/repo. This will start watching your folder for changes.
+
+* Git status
+Very useful command to check if anything is out of order, perhaps modified files that have not been committed or new files that have not been added.	
+
+* Git add <fileName>
+File or files that you want to add to next commit.
+
+* Git commit -m “<someMeaningfulMessageHere>”
+
+##Git Advanced##
+* Git Log
+Display a list of all commits
+
+* Git Checkout <commitID>
+Go to a specific commit, this command does not confirm the checkout
+
+* git revert --no-commit <commitID>..HEAD
+Confirm the checkout, this will reset the Master to where the checkout HEAD is pointing. Follow up with a git commit for tracking.
+    
+   HEAD
+    O -> O -> O -> O
+                   Master
+
+
+******Using GitHub******
+##First repo##
+//Install Git and create a GitHub account. Refer to Git commands above.
+1. On your computer, create a new project folder
+2. In that folder, run the “git init” command.
+3. Create a new file (ex: “touch git-tutorial.txt”)
+4. Add files: “git add git-tutorial.txt”
+5. Commit changes: git commit -m “first commit”
+//Up to this point everything has been done locally. Time to "push" to GitHub
+6. Go to GitHub and create a new repo (ex: “touch git-tutorial.txt”). When you create it, a URL will be provided.
+7. You will now add your local code to your GitHub repo with two commands (make sure to replace with your own URL):
+	git remote add origin https://github.com/garcia206/git_github-tutorial.git //This will add/set the origin aka the location of your GitHub repo where your local code will be "pushed"
+	git push -u origin master //This will "push" your local code to your GitHub repo in the URL you set above
+8. Congratulations, your local code has now been "pushed" to your GitHub repo.
+
+##Vocabulary##
+Both will "copy" the repo but they are not the same:
+clone: making a copy of the repo locally
+fork: copying the repo as your own repo to your GitHub account (future merges may occur, a "pull" is possible.)
