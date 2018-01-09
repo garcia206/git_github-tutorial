@@ -14,22 +14,23 @@ Note: Git and GitHub are not the same. Git is the technology and GitHub makes us
 
 ******Using Git******
 ##Git Basic Commands##
-* Git init
+* git init
 Once per project folder/repo. This will start watching your folder for changes.
 
-* Git status
+* git status
 Very useful command to check if anything is out of order, perhaps modified files that have not been committed or new files that have not been added.	
 
-* Git add <fileName>
+* git add <fileName>
 File or files that you want to add to next commit.
 
-* Git commit -m “<someMeaningfulMessageHere>”
+* git commit -m “<someMeaningfulMessageHere>”
+Records changes to the repository
 
 ##Git Advanced##
-* Git Log
+* git Log
 Display a list of all commits
 
-* Git Checkout <commitID>
+* git Checkout <commitID>
 Go to a specific commit, this command does not confirm the checkout
 
 * git revert --no-commit <commitID>..HEAD
@@ -56,6 +57,6 @@ Confirm the checkout, this will reset the Master to where the checkout HEAD is p
 8. Congratulations, your local code has now been "pushed" to your GitHub repo.
 
 ##Vocabulary##
-Both will "copy" the repo but they are not the same. clone is an actual git command, fork isn't:
 clone: used to target an existing repository and create a clone, or copy of the target repository.
 fork: copying the repo as your own repo to your GitHub account (future merges may occur, a "pull" is possible.)
+//Note: Both will "copy" the repo but they are not the same. clone is an actual git command, fork isn't.
